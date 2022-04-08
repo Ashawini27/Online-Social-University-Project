@@ -77,7 +77,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="60" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Student Management Systems Using Java"/>
+                <Property name="text" type="java.lang.String" value="Online Social University"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <Constraints>
@@ -155,13 +155,13 @@
                             <Column editable="true" title="Address" type="java.lang.String"/>
                             <Column editable="true" title="Gender" type="java.lang.String"/>
                             <Column editable="true" title="Mobile" type="java.lang.Integer"/>
-                            <Column editable="true" title="Maths" type="java.lang.Object"/>
-                            <Column editable="true" title="Games" type="java.lang.String"/>
+                            <Column editable="true" title="SoftwareEngineering" type="java.lang.Object"/>
+                            <Column editable="true" title="CSPuzzle" type="java.lang.String"/>
                             <Column editable="true" title="Data Sci" type="java.lang.String"/>
                             <Column editable="true" title="Analysis" type="java.lang.String"/>
                             <Column editable="true" title="Graphic" type="java.lang.String"/>
                             <Column editable="true" title="Database" type="java.lang.String"/>
-                            <Column editable="true" title="Science" type="java.lang.String"/>
+                            <Column editable="true" title="Java" type="java.lang.String"/>
                             <Column editable="true" title="English" type="java.lang.String"/>
                           </Table>
                         </Property>
@@ -407,7 +407,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Science"/>
+                        <Property name="text" type="java.lang.String" value="Java"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -474,7 +474,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cboScience">
+                    <Component class="javax.swing.JComboBox" name="cboJava">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="0"/>
@@ -548,7 +548,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Maths"/>
+                        <Property name="text" type="java.lang.String" value="SoftwareEngineering"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -556,7 +556,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cboMaths">
+                    <Component class="javax.swing.JComboBox" name="cboSoftwareEngineering">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="0"/>
@@ -579,7 +579,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cboGames">
+                    <Component class="javax.swing.JComboBox" name="cboCSPuzzle">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="0"/>
@@ -607,7 +607,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Games"/>
+                        <Property name="text" type="java.lang.String" value="CSPuzzle"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

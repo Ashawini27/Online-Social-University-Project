@@ -66,13 +66,13 @@ public class StudentDBMysql extends javax.swing.JFrame {
                     columnData.add(rs.getString("address"));
                     columnData.add(rs.getString("gender"));
                     columnData.add(rs.getString("mobile"));
-                    columnData.add(rs.getString("softwareengineering"));
+                    columnData.add(rs.getString("SoftwareEngineering"));
                     columnData.add(rs.getString("CSPuzzle"));
                     columnData.add(rs.getString("datasci"));
                     columnData.add(rs.getString("analysis"));
                     columnData.add(rs.getString("graphic"));
                     columnData.add(rs.getString("database1"));
-                    columnData.add(rs.getString("java"));
+                    columnData.add(rs.getString("Java"));
                     columnData.add(rs.getString("english"));
                 }
                     RecordTable.addRow(columnData);
