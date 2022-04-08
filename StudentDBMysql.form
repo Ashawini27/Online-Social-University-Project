@@ -155,7 +155,7 @@
                             <Column editable="true" title="Address" type="java.lang.String"/>
                             <Column editable="true" title="Gender" type="java.lang.String"/>
                             <Column editable="true" title="Mobile" type="java.lang.Integer"/>
-                            <Column editable="true" title="Software Engineering" type="java.lang.Object"/>
+                            <Column editable="true" title="SoftwareEngineering" type="java.lang.Object"/>
                             <Column editable="true" title="CSPuzzle" type="java.lang.String"/>
                             <Column editable="true" title="Data Sci" type="java.lang.String"/>
                             <Column editable="true" title="Analysis" type="java.lang.String"/>
@@ -548,7 +548,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="softwareengineering"/>
+                        <Property name="text" type="java.lang.String" value="SoftwareEngineering"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -556,7 +556,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cboSofwtareEngineering">
+                    <Component class="javax.swing.JComboBox" name="cboSoftwareEngineering">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="0"/>
