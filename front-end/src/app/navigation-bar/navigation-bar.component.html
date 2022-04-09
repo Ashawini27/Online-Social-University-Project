@@ -1,0 +1,7 @@
+<mat-toolbar>
+    <span>Online Social University</span>
+    <button mat-raised-button (click)="login()" *ngIf="!isLogin">login</button>
+    <button mat-raised-button color="primary" (click)="register()" *ngIf="!isLogin">register</button>
+    <input matInput [(ngModel)]="search" *ngIf="isLogin">
+  </mat-toolbar>
+  
