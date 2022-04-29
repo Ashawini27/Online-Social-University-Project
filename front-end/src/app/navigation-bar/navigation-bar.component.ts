@@ -6,17 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
+  searchInput = '';
+  isLogin;
 
-  constructor() { }
+  constructor() {
+    this.isLogin = false;
+  }
 
   ngOnInit(): void {
-  }
-  
-  login(){
 
   }
 
-  register(){
+  login() {
+
+  }
+
+  register() {
+
+  }
+
+  search() {
 
   }
 

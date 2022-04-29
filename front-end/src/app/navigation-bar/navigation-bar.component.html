@@ -1,7 +1,32 @@
-<mat-toolbar>
-    <span>Online Social University</span>
-    <button mat-raised-button (click)="login()" *ngIf="!isLogin">login</button>
-    <button mat-raised-button color="primary" (click)="register()" *ngIf="!isLogin">register</button>
-    <input matInput [(ngModel)]="search" *ngIf="isLogin">
-  </mat-toolbar>
-  
+<mat-toolbar color="primary">
+  <span>Online Social University</span>
+  <span class="space"></span>
+  <button mat-button routerLink="/login" *ngIf="!isLogin">login</button>
+  <button mat-button routerLink="/register" *ngIf="!isLogin">register</button>
+  <div *ngIf="isLogin">
+    <mat-form-field class="search" appearance="fill">
+      <mat-label>Search</mat-label>
+      <input matInput type="text" [(ngModel)]="searchInput">
+      <button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Search" (click)="search">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span>home</span>
+      </button>
+      <button mat-menu-item>
+        <span>one-to-one help</span>
+      </button>
+      <button mat-menu-item>
+        <span>E-library</span>
+      </button>
+      <button mat-menu-item>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
