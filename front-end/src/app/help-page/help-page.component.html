@@ -1,0 +1,18 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="content">
+  <h2>One-to-One Assistant</h2>
+  <form class="question">
+    <mat-form-field class="title" appearance="fill" [(ngModel)]="title">
+      <mat-label>Title</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="detail" appearance="fill">
+      <mat-label>Question Detail</mat-label>
+      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="10" [(ngModel)]="content"></textarea>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" (click)="submit()">submit</button>
+
+</div>
+

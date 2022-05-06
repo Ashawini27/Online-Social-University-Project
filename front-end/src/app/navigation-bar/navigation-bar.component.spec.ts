@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {NavigationBarComponent} from './navigation-bar.component';
 import {RouterTestingModule} from "@angular/router/testing";
 import {MatMenuModule} from "@angular/material/menu";
+import {HttpClientModule} from "@angular/common/http";
 
 describe('NavigationBarComponent', () => {
   let component: NavigationBarComponent;
@@ -10,7 +11,7 @@ describe('NavigationBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, MatMenuModule],
+      imports: [RouterTestingModule, MatMenuModule, HttpClientModule],
       declarations: [NavigationBarComponent]
     })
     .compileComponents();
