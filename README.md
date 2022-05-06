@@ -20,6 +20,10 @@ The project intends to offer free education and real-time university experience 
      II> Link Microsoft Access Database to the Netbeans Services for the project
      III> Run the Code
      
+- Course Management Module
+     I> Use 'npm install' to install all the dependencies
+     II> Use 'ng serve' from Angular CLI to run the code
+     
  # Instruction to run Tests
  
 Executing the NetBeans code will automatically run all test cases as well for every Java module. For Course Management Module, tests can be ran by executing "ng test" using Angular CLI. We have mostly preferred performing Manual Black Box testing for these modules. Defining automated testing is our future work. 
