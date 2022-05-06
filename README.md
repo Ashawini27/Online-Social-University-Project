@@ -29,14 +29,21 @@ Executing the NetBeans code will automatically run all test cases as well for ev
  1] Use Case 1: User Registeration
 
 Preconditions
+     
      User must on our Register page.
+
 Main Flow
+     
      User register for our application with username and password [S1]. User will input their learning interest and knowledge level [S2]. User will see class         recommendation based on the information provided [S3]. 
+
 Subflows
+
      [S1] User provide their learning interest and knowledge level
      [S2] Back end Server will store user information
      [S3] Back end will find courses based on user’s information then pass to the front end
+
 Alternative Flows
+     
      invalid or occupied username or invalid password
 
 
