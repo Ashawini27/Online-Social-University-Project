@@ -22,7 +22,7 @@ The project intends to offer free education and real-time university experience 
      
  # Instruction to run Tests
  
-Executing the NetBeans code will automatically run all test cases as well for every Jave module. We have mostly preferred performing Manual Black Box testing for these modules. Defining automated testing is our future work. 
+Executing the NetBeans code will automatically run all test cases as well for every Java module. For Course Management Module, tests can be ran by executing "ng test" using Angular CLI. We have mostly preferred performing Manual Black Box testing for these modules. Defining automated testing is our future work. 
      
     
      
