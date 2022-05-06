@@ -1,4 +1,4 @@
-# Online Social University Project ensures Continuous Learning
+# Online Social University Project - Learning Continues
 
 This is a software engineering group repository consists all codes for 'Online Social University" Project. 
 
