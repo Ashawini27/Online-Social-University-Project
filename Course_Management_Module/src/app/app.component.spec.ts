@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  // it(`should have as title 'front-end'`, () => {
+  // it(`should have as title 'Course_Management_Module'`, () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   const app = fixture.componentInstance;
-  //   expect(app.title).toEqual('front-end');
+  //   expect(app.title).toEqual('Course_Management_Module');
   // });
 
   // it('should render title', () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   fixture.detectChanges();
   //   const compiled = fixture.nativeElement as HTMLElement;
-  //   expect(compiled.querySelector('.content span')?.textContent).toContain('front-end app is running!');
+  //   expect(compiled.querySelector('.content span')?.textContent).toContain('Course_Management_Module app is running!');
   // });
 });

@@ -26,6 +26,7 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {SearchComponent} from './search/search.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {PdfViewerModule} from "ng2-pdf-viewer";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import {PdfViewerModule} from "ng2-pdf-viewer";
     MatListModule,
     MatProgressBarModule,
     MatCheckboxModule,
-    PdfViewerModule
+    PdfViewerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
