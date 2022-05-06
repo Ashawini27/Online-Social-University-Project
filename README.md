@@ -47,4 +47,12 @@ Alternative Flows
      invalid or occupied username or invalid password
 
 
-
+# Instruction to Execute UseCase
+ I> Execute the Login Page of the Student Management System module in Netbeans
+ 
+ II> After login into the system with userID - 'admin' and Password - 'pass', the system provides an option for user registration. 
+ 
+ III> Fill out the registration form and save the data.
+ 
+# Expected Behavior
+The filled data for user registration should be saved into the database. Users can check it by selecting the view student information option and searching by studentID used selected. This should retrieve the same user data again from the database.  
