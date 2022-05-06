@@ -1,0 +1,16 @@
+.chapter {
+  float: left;
+  padding-top: 80px;
+  width: 20%;
+  height: 800px;
+}
+
+mat-card {
+  height: 100%;
+}
+
+.course {
+  padding: 70px;
+  width: 70%;
+  float: right;
+}

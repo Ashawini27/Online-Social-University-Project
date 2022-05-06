@@ -7,7 +7,7 @@
     <mat-form-field class="search" appearance="fill">
       <mat-label>Search</mat-label>
       <input matInput type="text" [(ngModel)]="searchInput">
-      <button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Search" (click)="search">
+      <button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Search" (click)="search()">
         <mat-icon>search</mat-icon>
       </button>
     </mat-form-field>
@@ -15,14 +15,11 @@
       <mat-icon>person</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="/home">
         <span>home</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="/help">
         <span>one-to-one help</span>
-      </button>
-      <button mat-menu-item>
-        <span>E-library</span>
       </button>
       <button mat-menu-item>
         <span>Logout</span>

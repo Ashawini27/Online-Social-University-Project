@@ -8,7 +8,6 @@ import {FrontPageComponent} from './front-page/front-page.component';
 import {CoursePageComponent} from './course-page/course-page.component';
 import {CourseCardComponent} from './course-card/course-card.component';
 import {AppRoutingModule} from './app-routing.module';
-import {LibPageComponent} from './lib-page/lib-page.component';
 import {HelpPageComponent} from './help-page/help-page.component';
 import {SurveyPageComponent} from './survey-page/survey-page.component';
 import {MatMenuModule} from '@angular/material/menu';
@@ -23,6 +22,10 @@ import {RegisterPageComponent} from './register-page/register-page.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatListModule} from "@angular/material/list";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {SearchComponent} from './search/search.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {PdfViewerModule} from "ng2-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -32,11 +35,11 @@ import {MatListModule} from "@angular/material/list";
     FrontPageComponent,
     CoursePageComponent,
     CourseCardComponent,
-    LibPageComponent,
     HelpPageComponent,
     SurveyPageComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,10 @@ import {MatListModule} from "@angular/material/list";
     MatInputModule,
     MatCardModule,
     MatRadioModule,
-    MatListModule
+    MatListModule,
+    MatProgressBarModule,
+    MatCheckboxModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
