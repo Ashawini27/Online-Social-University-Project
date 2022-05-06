@@ -19,7 +19,7 @@ const Login = () => {
     if(isAuthenticated) {
       router.push('/')
     }
-  })
+  },[])
 
   const handleSubmit = async (e) => {
     console.log(email, password)
@@ -44,7 +44,7 @@ const Login = () => {
       if(data.success) {
         setSuccess(true)
         setLoading(false)
-        localStorage.setItem('user', JSON.stringify({email: data.data.email, id: data.data._id}))
+        localStorage.setItem('user', JSON.stringify({name: data.data.name, email: data.data.email, id: data.data._id}))
         setTimeout(() => {
           window.location.href = '/'
         }, 1000)
@@ -72,17 +72,17 @@ const Login = () => {
           <form>
           <div className="field">
               <div className="control">
-                <input className="input is-medium is-rounded" name='name' value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="jhon" autoComplete="username" required />
+                <input className="input is-medium is-rounded" name='name' value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="jhon" required />
               </div>
             </div>
             <div className="field">
               <div className="control">
-                <input className="input is-medium is-rounded" name='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="hello@example.com" autoComplete="username" required />
+                <input className="input is-medium is-rounded" name='email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="hello@example.com" required />
               </div>
             </div>
             <div className="field">
               <div className="control">
-                <input className="input is-medium is-rounded" name='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="**********" autoComplete="current-password" required />
+                <input className="input is-medium is-rounded" name='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="**********" required />
               </div>
             </div>
             <br />

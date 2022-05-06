@@ -8,7 +8,7 @@ export default function Body() {
             <div className={bodyStyle.shadow}></div>
             <h1 className={"title "+bodyStyle.title_text}>Welcome to</h1>
             <h2 className={"subtitle "+bodyStyle.subtitle_text}>Online Social University</h2>
-            <button class="button is-primary is-rounded is-normal">Check Out Courses</button>
+            <button className={"button is-primary is-rounded is-normal "+bodyStyle.course}>Check Out Courses</button>
         </section>
     )
 }

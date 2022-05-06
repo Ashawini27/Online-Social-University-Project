@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css'
 import Body from './_body';
@@ -14,9 +15,12 @@ export default function Home() {
     }else {
       setIsAuth(false);
     }
-  })
+  },[])
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Home | OSU</title>
+      </Head>
       <Nav isAuth={isAuth} user={user} />
       <Body />
     </div>
