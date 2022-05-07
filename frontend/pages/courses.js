@@ -1,7 +1,7 @@
 import Card from "../src/card"
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css'
-import Nav from './_nav'
+import Nav from '../src/_nav'
 import Head from 'next/head';
 
 const courseData = [
@@ -55,7 +55,7 @@ const Courses = () => {
                 <h1 className="title">Courses</h1>
                 <div className="columns is-multiline">
                     {courseData.map(course => (
-                        <div className="column is-one-quarter">
+                        <div className="column is-one-quarter" key={course.id}>
                             <Card course={course} key={course.id} />
                         </div>   
                     ))}

@@ -39,7 +39,7 @@ const Generate = ({}) => {
         }else {
             router.push('/');
         }
-    },[])
+    },[router])
 
     return (
         <>

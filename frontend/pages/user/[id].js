@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
 import styles from '../../styles/Home.module.css'
-import Nav from '../_nav'
+import Nav from '../../src/_nav'
 import Head from 'next/head';
 
 const lineStyle = {
@@ -20,7 +20,7 @@ const stylesNew = {
 
 const Tab = ({ title, type, data }) => {
     const router = useRouter();
-    const [course, setCourse] = useState();
+    const [course, setCourse] = useState(data[0]);
     
     const handleSubmit = (e) => {
         const path = `/generatecert/${course}`;
@@ -33,17 +33,18 @@ const Tab = ({ title, type, data }) => {
             {
                 type == 3 ?
                 <div>
-                    <div class="control" style={stylesNew.select}>
+                    <div className="control" style={stylesNew.select}>
                         <label className='is-text is-size-4'>Select the Course</label>
-                        <div class="select">
+                        <div className="select">
                             <select value={course} onChange={(e) => setCourse(e.target.value)}>
-                                <option>Software Diploma</option>
-                                <option>Python Master Class</option>
+                                {data.map((course, index) => {
+                                    return <option key={index} value={course}>{course}</option>
+                                })}
                             </select>
                         </div>
                     </div>
-                    <div class="control">
-                        <button class="button is-primary" onClick={handleSubmit}>Generate Certificate</button>
+                    <div className="control">
+                        <button className="button is-primary" onClick={handleSubmit}>Generate Certificate</button>
                     </div>
                 </div>
                 : <p>Hellssss</p>
@@ -98,7 +99,7 @@ const User = () => {
                         </aside>
                     </div>
                     <div style={lineStyle}></div>
-                    <Tab type={3} title="My Books" data={[]} />
+                    <Tab type={3} title="My Certificate" data={['Software Diploma', 'Python Master Class']} />
                 </div>
             </div>
         </section>

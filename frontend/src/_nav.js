@@ -1,4 +1,5 @@
 import navStyle from '../styles/Nav.module.css'
+import Link from 'next/link'
 
 export default function Nav({isAuth, user}) {
     const logout = () => {
@@ -8,9 +9,12 @@ export default function Nav({isAuth, user}) {
     return (
         <nav className={"navbar "+navStyle.navbar_width} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-            <a className="navbar-item has-text-weight-bold" href="/">
+            
+            <Link href="/">
+            <a className="navbar-item has-text-weight-bold">
                 Online Social University
             </a>
+            </Link>
 
             <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -21,34 +25,50 @@ export default function Nav({isAuth, user}) {
 
         <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
-                <a className="navbar-item" href='/'>
+                <Link href='/'>
+                <a className="navbar-item">
                     Home
                 </a>
-                <a className="navbar-item" href='/courses'>
+                </Link>
+                
+                <Link className="navbar-item" href='/courses'>
+                <a className="navbar-item">
                     Courses
                 </a>
-                <a className="navbar-item" href='/library'>
+                </Link>
+                
+                <Link className="navbar-item" href='/library'>
+                <a className="navbar-item">
                     Library
                 </a>
+                </Link>
             </div>
 
             <div className="navbar-end">
             <div className="navbar-item">
                 <div className="buttons">
                 {!isAuth ? (
-                    <><a className="button is-primary" href="/auth/signup">
+                    <>
+                    <Link href="/auth/signup">
+                    <a className='button is-primary is-rounded is-normal'>
                         <strong>Sign up</strong>
                     </a>
-                    <a className="button is-light" href="/auth/login">
-                        Log in
-                    </a></>
+                    </Link>
+                    
+                    <Link href="/auth/login">
+                    <a className="button is-light  is-rounded is-normal">Log in</a>
+                    </Link>
+                    </>
                 ) : (
-                    <><a className="button is-light" href={"/user/"+user.id}>
+                    <><Link className="button is-light" href={"/user/"+user.id}>
+                        <a className='button is-light'>
                         My Account
-                    </a>
+                        </a>
+                    </Link>
                     <a className="button is-danger" onClick={logout}>
                         Log out
-                    </a></>
+                    </a>
+                    </>
                 )}
                 </div>
             </div>

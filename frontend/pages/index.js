@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css'
-import Body from './_body';
-import Nav from './_nav'
+import Body from '../src/_body';
+import Nav from '../src/_nav'
 
 export default function Home() {
   const [isAuth, setIsAuth] = useState();

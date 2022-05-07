@@ -4,6 +4,8 @@ import Image from 'next/image'
 import profilePic from '../../public/logoipsum-logo-64.svg'
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -18,7 +20,7 @@ const Login = () => {
     if(isAuthenticated) {
       router.push('/')
     }
-  },[])
+  },[router])
 
   const handleSubmit = async (e) => {
     console.log(email, password)
@@ -63,10 +65,14 @@ const Login = () => {
     setSuccess(false);
   }
   return (
+    <>
+    <Head>
+      <title>Login | OSU</title>
+    </Head>
     <section className={'hero is-fullheight '+ loginStyle.center}>
       <div className="hero-body has-text-centered">
         <div className="login">
-          <Image src={profilePic} width="325px" />
+          <Image src={profilePic} width="325px" alt='mock profile' />
           <form>
             <div className="field">
               <div className="control">
@@ -99,13 +105,14 @@ const Login = () => {
           <nav className="level">
             <div className="level-item has-text-centered">
               <div>
-                <a href="/auth/signup">Create an Account</a>
+                <Link href="/auth/signup">Create an Account</Link>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </section> 
+    </>
   )
 }
 
