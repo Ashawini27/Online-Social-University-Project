@@ -87,7 +87,7 @@ const Login = () => {
               </div>
             </div>
             <br />
-            <button className="button is-block is-fullwidth is-primary is-medium is-rounded" onClick={handleSubmit}>
+            <button name='signup' type='submit' className="button is-block is-fullwidth is-primary is-medium is-rounded" onClick={handleSubmit}>
               Signup
             </button>
           </form>

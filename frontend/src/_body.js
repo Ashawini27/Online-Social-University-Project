@@ -6,8 +6,6 @@ import background from '../public/background.png'
 export default function Body() {
     return (
         <section className={"section is-large "+bodyStyle.main}>
-            <Image src={background} width="50" height="50" className={bodyStyle.img} alt="">
-            </Image>
             <div className={bodyStyle.shadow}></div>
             <h1 className={"title "+bodyStyle.title_text}>Welcome to</h1>
             <h2 className={"subtitle "+bodyStyle.subtitle_text}>Online Social University</h2>

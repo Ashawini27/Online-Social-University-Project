@@ -1,0 +1,71 @@
+describe('Navigation', () => {
+    it('should navigate to the courses page', () => {
+      cy.visit('http://localhost:3000/')
+      cy.get('a[href*="courses"]').click()
+      cy.url().should('include', '/courses')
+    //   cy.get('h1').contains('About Page')
+    })
+    it('should navigate to the login page', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="login"]').click()
+        cy.url().should('include', '/login')
+    })
+    it('should navigate to the signup page', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="signup"]').click()
+        cy.url().should('include', '/signup')
+    })
+  })
+
+describe('Signup', () => {
+    it('should signup a new user', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="signup"]').click()
+        cy.url().should('include', '/signup')
+        cy.get('input[name="name"]').type('John Doe')
+        cy.get('input[name="email"]').type('test@email.com')
+        cy.get('input[name="password"]').type('123456')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/')
+    })
+    it('should not signup a new user with an existing email', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="signup"]').click()
+        cy.url().should('include', '/signup')
+        cy.get('input[name="name"]').type('John Doe')
+        cy.get('input[name="email"]').type('test@email.com')
+        cy.get('input[name="password"]').type('123456')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/signup')
+    })
+})
+
+describe('Login', () => {
+    it('should login a user', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="login"]').click()
+        cy.url().should('include', '/login')
+        cy.get('input[name="email"]').type('test@email.com')
+        cy.get('input[name="password"]').type('123456')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/')
+    })
+    it('should not login a user with an invalid email', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="login"]').click()
+        cy.url().should('include', '/login')
+        cy.get('input[name="email"]').type('abdh@email.com')
+        cy.get('input[name="password"]').type('123456')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/login')
+    })
+    it('should not login a user with an invalid password', () => {
+        cy.visit('http://localhost:3000/')
+        cy.get('a[href*="login"]').click()
+        cy.url().should('include', '/login')
+        cy.get('input[name="email"]').type('test@email.com')
+        cy.get('input[name="password"]').type('1234567')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/login')
+    })
+})
