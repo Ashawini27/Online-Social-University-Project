@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-title>
+    <span (click)="openCourse()">{{course.name}}</span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="course.isMyCourse" class="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="remove()">
+        <mat-icon>delete</mat-icon>
+        <span>remove</span>
+      </button>
+    </mat-menu>
+
+  </mat-card-title>
+  <mat-card-content (click)="openCourse()">
+    <span>{{course.disc}}</span>
+  </mat-card-content>
+  <div *ngIf="course.isMyCourse">
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <span>last opened: {{course.lastOpened | date : 'dd/MM/yyyy'}}</span>
+      <br>
+      <span>{{course.progress}}%</span>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar mode="determinate" value="{{course.progress}}"></mat-progress-bar>
+    </mat-card-footer>
+  </div>
+
+</mat-card>

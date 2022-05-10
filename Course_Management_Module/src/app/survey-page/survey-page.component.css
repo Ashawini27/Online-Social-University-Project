@@ -1,0 +1,20 @@
+mat-card {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+span {
+  font-size: 30px;
+}
+
+.question {
+  margin-top: 100px;
+  width: 100%;
+}
+
+mat-radio-button {
+  margin-left: 15px;
+}
+
+

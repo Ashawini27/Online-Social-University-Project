@@ -1,0 +1,37 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="content">
+  <div class="chapter">
+    <mat-card>
+      <mat-card-title>
+        <h2>Chapters</h2>
+      </mat-card-title>
+      <mat-card-content>
+        <mat-nav-list>
+          <a mat-list-item (click)="change(page.page)" *ngFor="let page of pages">
+            Chapter {{page.chapter}}
+          </a>
+        </mat-nav-list>
+      </mat-card-content>
+
+    </mat-card>
+
+  </div>
+  <div class="course">
+    <pdf-viewer
+      [src]="src"
+      [rotation]="0"
+      [original-size]="false"
+      [show-all]="true"
+      [fit-to-page]="false"
+      [zoom]="1"
+      [zoom-scale]="'page-width'"
+      [stick-to-page]="false"
+      [render-text]="true"
+      [external-link-target]="'blank'"
+      [autoresize]="true"
+      [show-borders]="false"
+      [page]="currPage"
+      style="width: 100%; height: 780px;"
+    ></pdf-viewer>
+  </div>
+</div>

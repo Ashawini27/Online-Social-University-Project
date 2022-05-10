@@ -1,0 +1,23 @@
+.filter-div {
+  width: 20%;
+  margin-left: 10px;
+  position: fixed;
+  height: 70%
+}
+
+.filter-card {
+  height: 100%;
+}
+
+.content {
+  padding-top: 90px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.results {
+  width: 75%;
+  margin-left: 23%;
+}

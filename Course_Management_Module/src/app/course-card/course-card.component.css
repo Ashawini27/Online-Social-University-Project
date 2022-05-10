@@ -1,0 +1,14 @@
+mat-card {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+mat-card-actions {
+  margin-bottom: 0px;
+}
+
+.menu {
+  float: right;
+}
+
+
