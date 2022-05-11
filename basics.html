@@ -1,0 +1,96 @@
+<!--
+    CS5764: Information Visualization 
+    LAB 1 - 
+    Activity 1
+    Submission by : Nidhi Priya
+
+    Under the sincere guidance of : Yalong Yang and Leonardo Pavanatto
+
+-->
+<!-- 
+    HTML Static page : 
+    Document type declaration that opens and ends with html tag
+    The <head> element is a container for metadata 
+    The <script> tag is used to embed JavaScript.
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> The VT FactBook</title>
+    <meta name="viewpoint" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #6A283C;
+    }
+</style>
+
+<!--
+    <body> tag determines the visible part of the HTML document.
+    <h1> - <h6> represet the HTML headings tags in the order of most important to least important
+    <div> is a division or section in the HTML document that is styled by CSS or manupulated by Js
+    <a href> is an attribute that specifies the URL of the page the link goes to.
+    <img> tag is used to embed an image in a web page.
+    <button> tag defines a clickable button.    
+-->
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">CS 5764-Basics</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">CS 5764</a></li>
+        <li><a href="#">Resources</a></li>
+    </ul>
+
+    <div class="wrap">
+        <div>
+            <h1>The Virginia Tech FactBook</h1>
+        </div>
+        <br>
+        <div ><img style="width: 320px; height: 360px; float: right" src=Capture.JPG alt="Torgersen Hall"></div>
+
+            <div class="back-content">
+            <button class="btn btn-primary" id="cs5764-basics" type="button">Get a random fact about Virginia
+                Tech</button>
+        </div><br>
+        <div id="content">
+            Facts
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dom-example.js"></script>
+
+</body>
+
+</html>
